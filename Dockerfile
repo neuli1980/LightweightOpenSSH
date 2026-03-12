@@ -2,7 +2,7 @@
 FROM alpine:3.23
 
 # Install necessary packages: OpenSSH server and Git
-RUN apt-get update && apt-get install -y \
+RUN apk update && apk add \
     openssh-server \
     git
 
